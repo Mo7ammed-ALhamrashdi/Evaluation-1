@@ -32,7 +32,7 @@ public class SchoolApp {
 
             int choice =
                     input.getIntInput(
-                            "Choose:",
+                            "Choose :",
                             1,
                             4
                     );
@@ -69,7 +69,7 @@ public class SchoolApp {
         );
 
         System.out.println(
-                "1. Add student"
+                "1. Add New student"
         );
 
         System.out.println(
