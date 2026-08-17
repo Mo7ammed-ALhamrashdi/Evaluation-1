@@ -22,13 +22,13 @@ public class SchoolApp {
         app.run();
     }
 
-    public void run() {
+    public void run( ) {
 
-        boolean exit = false;
+        boolean exit  =  false;
 
-        while (exit == false) {
+        while (exit  ==  false) {
 
-            printMenu();
+            printMenu( );
 
             int choice =
                     input.getIntInput(
@@ -40,15 +40,15 @@ public class SchoolApp {
             switch (choice) {
 
                 case 1:
-                    addStudent();
+                    addStudent( );
                     break;
 
                 case 2:
-                    viewAllStudents();
+                    viewAllStudents( );
                     break;
 
                 case 3:
-                    searchStudent();
+                    searchStudent ();
                     break;
 
                 case 4:
