@@ -97,16 +97,18 @@ public class SchoolApp {
                         "Last name:"
                 );
 
-        String phone =
+        String Grade =
                 input.getStringInput(
-                        "Phone:"
+                        "grade:"
                 );
-
+        String Id =
+                input.getStringInput(
+                        "id:");
         Student s =
                 studentService.addStudent(
                         first,
                         last,
-                        phone
+                        Id,Grade
                 );
 
         System.out.println(
@@ -132,7 +134,7 @@ public class SchoolApp {
 
         String id =
                 input.getStringInput(
-                        "Enter id:"
+                        "Enter your id:"
                 );
 
         Student s =
