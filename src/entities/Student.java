@@ -8,3 +8,69 @@ public class Student extends Person {
     private String enrollmentDate;
     private double feeBalance;
     private List<String> subjects;
+
+    public Student(String id, String firstName, String lastName,
+                   String dateOfBirth, String gender,
+                   String phoneNumber, String email, String address,
+                   String gradeLevel, String enrollmentDate,
+                   double feeBalance) {
+        super(id, firstName, lastName,
+                dateOfBirth, gender,
+                phoneNumber, email, address);
+        this.gradeLevel = gradeLevel;
+        this.enrollmentDate = enrollmentDate;
+        setFeeBalance(feeBalance);
+        this.subjects = new ArrayList<>();
+    }
+    public String getGradeLevel() {
+        return gradeLevel;
+    }
+    public String getEnrollmentDate() {
+        return enrollmentDate;
+    }
+    public double getFeeBalance() {
+        return feeBalance;
+    }
+    public List<String> getSubjects() {
+        return subjects;
+    }
+    public void setGradeLevel(String gradeLevel) {
+        this.gradeLevel = gradeLevel;
+    }
+    public void setEnrollmentDate(String enrollmentDate) {
+        this.enrollmentDate = enrollmentDate;
+    }
+    public void setFeeBalance(double feeBalance) {
+        if (feeBalance < 0) {
+            System.out.println(
+                    "Fee cannot be below 0. Keeping it at 0."
+            );
+            this.feeBalance = 0;
+            return;
+        }
+        this.feeBalance = feeBalance;
+    }
+    public void addSubject(String subject) {
+        subjects.add(subject);
+    }
+    public void updateContact(String phone) {
+        setPhoneNumber(phone);
+    }
+    public void updateContact(String phone, String email) {
+
+        setPhoneNumber(phone);
+        setEmail(email);
+    }
+    @Override
+    public void displayInfo() {
+        System.out.println(
+                "Student: " +
+                        getFirstName() + " " +
+                        getLastName() +
+                        " | grade: " +
+                        gradeLevel +
+                        " | fee balance: " +
+                        feeBalance
+        );
+    }
+}
