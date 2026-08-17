@@ -1,7 +1,9 @@
 package entities;
 import java.util.ArrayList;
 import java.util.List;
-public class Teacher {
+public abstract class Teacher {
+    public abstract void displayInfo();
+
     public class Teacher extends Person {
         private String subject;
         private int experienceYears;
