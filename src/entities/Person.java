@@ -1,7 +1,6 @@
 package entities;
 import interfaces.Displayable;
-public class Person {
-    public  class persom implements Displayable{
+    public  class Person implements Displayable{
         private String id;
         private String firstName;
         private String LastName;
@@ -10,6 +9,8 @@ public class Person {
         private String phoneNumber;
         private String email;
         private String address;
+public Person (String id, String firstName, String lastName, String dateOfBirth,
+              String gender, String phoneNumber, String email, String address){
 
-    }
 }
+    }
