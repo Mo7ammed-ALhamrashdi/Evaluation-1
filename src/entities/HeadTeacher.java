@@ -1,7 +1,6 @@
 package entities;
 
 public class HeadTeacher extends Teacher {
-
     private String department;
     private int teachersManaged;
 
@@ -13,34 +12,21 @@ public class HeadTeacher extends Teacher {
                        String department,
                        int teachersManaged) {
 
-        super(id,
-                firstName,
-                lastName,
-                dateOfBirth,
-                gender,
-                phoneNumber,
-                email,
-                address,
-                subject,
-                experienceYears,
-                salary);
+        super(id, firstName, lastName, dateOfBirth, gender, phoneNumber,
+                email, address, subject, experienceYears, salary);
 
         this.department = department;
         this.teachersManaged = teachersManaged;
     }
-
     public String getDepartment() {
         return department;
     }
-
     public int getTeachersManaged() {
         return teachersManaged;
     }
-
     public void setDepartment(String department) {
         this.department = department;
     }
-
     public void addManagedTeacher() {
 
         teachersManaged = teachersManaged + 1;
@@ -50,8 +36,8 @@ public class HeadTeacher extends Teacher {
 
         System.out.println(
                 "Head Teacher: " +
-                        getFirstName() + " " +
-                        getLastName() +
+                        getFirstName( ) + " " +
+                        getLastName( ) +
                         " | department: " +
                         department +
                         " | manages: " +
