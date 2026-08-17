@@ -1,4 +1,148 @@
 package services;
 
-public class StudentService {
+import entities.Student;
+import interfaces.Manageable;
+import interfaces.Searchable;
+import utils.HelperUtils;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class StudentService
+        implements Manageable<Student>,
+        Searchable<Student> {
+
+    private List<Student> students =
+            new ArrayList<>();
+
+    // Overloading
+
+    public Student addStudent(
+            String firstName,
+            String lastName,
+            String phone) {
+
+        String id =
+                HelperUtils.generateId("STU");
+
+        Student s = new Student(
+                id,
+                firstName,
+                lastName,
+                "",
+                "",
+                phone,
+                "",
+                "",
+                "Grade 1",
+                "2026-01-01",
+                0
+        );
+
+        students.add(s);
+
+        return s;
+    }
+
+    public Student addStudent(
+            String firstName,
+            String lastName,
+            String phone,
+            String gradeLevel) {
+
+        String id =
+                HelperUtils.generateId("STU");
+
+        Student s = new Student(
+                id,
+                firstName,
+                lastName,
+                "",
+                "",
+                phone,
+                "",
+                "",
+                gradeLevel,
+                "2026-01-01",
+                0
+        );
+
+        students.add(s);
+
+        return s;
+    }
+
+    public Student addStudent(Student student) {
+
+        students.add(student);
+
+        return student;
+    }
+
+    // Manageable
+
+    @Override
+    public void add(Student student) {
+
+        students.add(student);
+    }
+
+    @Override
+    public boolean remove(String id) {
+
+        Student found = searchById(id);
+
+        if (found != null) {
+
+            students.remove(found);
+
+            return true;
+        }
+
+        return false;
+    }
+
+    @Override
+    public List<Student> getAll() {
+
+        return students;
+    }
+
+    // Searchable
+
+    @Override
+    public Student searchById(String id) {
+
+        for (Student s : students) {
+
+            if (s.getId().equals(id)) {
+
+                return s;
+            }
+        }
+
+        return null;
+    }
+
+    @Override
+    public List<Student> search(
+            String keyword) {
+
+        List<Student> results =
+                new ArrayList<>();
+
+        for (Student s : students) {
+
+            if (s.getFirstName()
+                    .contains(keyword)
+                    ||
+                    s.getLastName()
+                            .contains(keyword)) {
+
+                results.add(s);
+            }
+        }
+
+        return results;
+    }
 }

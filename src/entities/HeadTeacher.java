@@ -50,7 +50,7 @@ public class HeadTeacher extends Teacher {
 
         System.out.println(
                 "Head Teacher: " +
-                        getfirstName() + " " +
+                        getFirstName() + " " +
                         getLastName() +
                         " | department: " +
                         department +
