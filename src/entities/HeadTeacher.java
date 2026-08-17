@@ -13,8 +13,16 @@ public class HeadTeacher extends Teacher {
                        String department,
                        int teachersManaged) {
 
-        super(id, firstName, lastName, dateOfBirth, gender, phoneNumber, email, address,
-                subject, experienceYears,
+        super(id,
+                firstName,
+                lastName,
+                dateOfBirth,
+                gender,
+                phoneNumber,
+                email,
+                address,
+                subject,
+                experienceYears,
                 salary);
 
         this.department = department;
@@ -37,4 +45,18 @@ public class HeadTeacher extends Teacher {
 
         teachersManaged = teachersManaged + 1;
     }
+    @Override
+    public void displayInfo() {
 
+        System.out.println(
+                "Head Teacher: " +
+                        getfirstName() + " " +
+                        getLastName() +
+                        " | department: " +
+                        department +
+                        " | manages: " +
+                        teachersManaged +
+                        " teachers"
+        );
+    }
+}
