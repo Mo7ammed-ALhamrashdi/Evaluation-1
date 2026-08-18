@@ -99,7 +99,7 @@ public class SchoolApp {
 
         String Grade =
                 input.getStringInput(
-                        "grade:"
+                        "-grade:"
                 );
         String Id =
                 input.getStringInput(
