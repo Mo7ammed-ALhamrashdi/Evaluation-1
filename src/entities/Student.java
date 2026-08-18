@@ -14,7 +14,7 @@ public class Student extends Person {
                    String phoneNumber, String email, String address,
                    String gradeLevel, String enrollmentDate,
                    double feeBalance) {
-        super(id, firstName, lastName,
+        super(id, firstName , lastName,
                 dateOfBirth, gender,
                 phoneNumber, email, address);
         this.gradeLevel = gradeLevel;
