@@ -65,7 +65,7 @@ public class SchoolApp {
         System.out.println();
 
         System.out.println(
-                "<... School Menu ...>"
+                "<.. School Menu ...>"
         );
 
         System.out.println(
