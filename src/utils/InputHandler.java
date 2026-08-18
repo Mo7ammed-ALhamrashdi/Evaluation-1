@@ -49,7 +49,7 @@ public class InputHandler {
             }
 
             System.out.println(
-                    "--Please enter a number between "
+                    "-Please enter a number between "
                             + min + " and " + max + "."
             );
         }
