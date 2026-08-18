@@ -120,7 +120,7 @@ public class Person implements Displayable {
     @Override
     public String displaySummary() {
 
-        return id + " - " + firstName + " " + lastName;
+        return id + "  " + firstName + " " + lastName;
     }
 
     // toString()
