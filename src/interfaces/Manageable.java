@@ -6,7 +6,7 @@ public interface Manageable<T> {
 
     void add(T entity);
 
-    boolean remove(String id);
+    boolean remove(String  id);
 
     List<T> getAll();
 }
