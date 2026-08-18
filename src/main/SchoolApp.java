@@ -134,7 +134,7 @@ public class SchoolApp {
 
         String id =
                 input.getStringInput(
-                        "Enter your id:"
+                        "-Enter your id:"
                 );
 
         Student s =
