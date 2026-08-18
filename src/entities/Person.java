@@ -55,7 +55,7 @@ public class Person implements Displayable {
     }
 
     public String getEmail() {
-        return email;
+        return  email;
     }
 
     public String getAddress() {
@@ -68,7 +68,7 @@ public class Person implements Displayable {
 
         if (utils.HelperUtils.isEmpty(id)) {
 
-            System.out.println("--Id cannot be empty. Keeping the old id.--");
+            System.out.println("-Id cannot be empty. Keeping the old id.-");
 
             return;
         }
