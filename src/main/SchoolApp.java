@@ -163,7 +163,7 @@ public class SchoolApp {
         studentService.addStudent(
                 "Layla",
                 "Balushi",
-                "90000002",
+                "90000112",
                 "Grade 9"
         );
 
