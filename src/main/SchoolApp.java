@@ -157,7 +157,7 @@ public class SchoolApp {
         studentService.addStudent(
                 "Ali",
                 "Khan",
-                "90000001"
+                "90000211"
         );
 
         studentService.addStudent(
