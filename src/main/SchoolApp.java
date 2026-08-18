@@ -103,7 +103,7 @@ public class SchoolApp {
                 );
         String Id =
                 input.getStringInput(
-                        "id:");
+                        "-id:");
         Student s =
                 studentService.addStudent(
                         first,
