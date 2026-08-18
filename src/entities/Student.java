@@ -64,7 +64,7 @@ public class Student extends Person {
     @Override
     public void displayInfo() {
         System.out.println(
-                "-Student: " +
+                "Student: " +
                         getFirstName() + " " +
                         getLastName() +
                         " | grade: " +
