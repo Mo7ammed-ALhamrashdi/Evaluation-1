@@ -75,7 +75,7 @@ public class Teacher extends Person {
     }
 
     // Overloading
-    public void updateSalary(double salary, String reason) {
+    public void updateSalary(double salary , String reason) {
         setSalary(salary);
 
         System.out.println(
