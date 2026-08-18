@@ -2,7 +2,7 @@ package interfaces;
 
 public interface Displayable {
 
-    void displayInfo( );
+    void displayInfo();
 
     String displaySummary( );
 }
