@@ -57,7 +57,7 @@ public class SchoolApp {
             }
         }
 
-        System.out.println("--Good bye.See You Soon--");
+        System.out.println("-Good bye.See You Soon--");
     }
 
     private void printMenu() {
