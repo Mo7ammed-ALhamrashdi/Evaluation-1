@@ -143,7 +143,7 @@ public class SchoolApp {
         if (s == null) {
 
             System.out.println(
-                    "-No student with that id.-"
+                    "--No student with that id.--"
             );
 
         } else {
