@@ -88,7 +88,7 @@ public class Teacher extends Person {
     public void displayInfo() {
 
         System.out.println(
-                "-Teacher: " +
+                "Teacher: " +
                         getFirstName() + " " +
                         getLastName() +
                         " | subject: " +
