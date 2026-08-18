@@ -31,18 +31,6 @@ public class HeadTeacher extends Teacher {
 
         teachersManaged = teachersManaged + 1;
     }
-    @Override
-    public void displayInfo() {
 
-        System.out.println(
-                "Head Teacher: " +
-                        getFirstName( ) + " " +
-                        getLastName( ) +
-                        " | department: " +
-                        department +
-                        " | manages: " +
-                        teachersManaged +
-                        " teachers"
-        );
     }
 }
