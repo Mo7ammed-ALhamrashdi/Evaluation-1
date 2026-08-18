@@ -12,7 +12,7 @@ public class SeniorStudent extends Student {
                          double feeBalance,
                          String major, double gpa) {
 
-        super(id, firstName, lastName,
+        super(id, firstName , lastName,
                 dateOfBirth, gender,
                 phoneNumber, email, address,
                 gradeLevel , enrollmentDate,
