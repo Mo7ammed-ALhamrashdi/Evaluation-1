@@ -94,7 +94,7 @@ public class SchoolApp {
 
         String last =
                 input.getStringInput(
-                        "-Last name:"
+                        "--Last name:"
                 );
 
         String Grade =
