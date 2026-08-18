@@ -112,7 +112,7 @@ public class SchoolApp {
                 );
 
         System.out.println(
-                "-Added: "
+                "--Added: "
                         + s.displaySummary()
         );
     }
