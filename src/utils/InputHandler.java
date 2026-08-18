@@ -22,7 +22,7 @@ public class InputHandler {
         while (!scanner.hasNextInt()) {
 
             System.out.print(
-                    "Please type a whole number: "
+                    "--Please type a whole number: "
             );
 
             scanner.next();
@@ -49,7 +49,7 @@ public class InputHandler {
             }
 
             System.out.println(
-                    "Please enter a number between "
+                    "--Please enter a number between "
                             + min + " and " + max + "."
             );
         }

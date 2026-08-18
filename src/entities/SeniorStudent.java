@@ -40,7 +40,7 @@ public class SeniorStudent extends Student {
     public void displayInfo() {
 
         System.out.println(
-                "Senior Student: " +
+                "--Senior Student: " +
                         getFirstName() + " " +
                         getLastName() +
                         " | major: " +

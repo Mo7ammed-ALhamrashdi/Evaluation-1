@@ -43,7 +43,7 @@ public class HelperUtils {
 
     public static String generateId() {
 
-        return "ID-" + (counter++);
+        return "-ID-" + (counter++);
     }
 
     public static String generateId(String prefix) {

@@ -12,7 +12,7 @@ public class HeadTeacher extends Teacher {
                        String department,
                        int teachersManaged) {
 
-        super(id, firstName, lastName, dateOfBirth, gender, phoneNumber,
+        super(id, firstName,  lastName, dateOfBirth, gender, phoneNumber,
                 email, address, subject, experienceYears, salary);
 
         this.department = department;

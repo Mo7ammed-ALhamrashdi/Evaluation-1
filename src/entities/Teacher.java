@@ -79,7 +79,7 @@ public class Teacher extends Person {
         setSalary(salary);
 
         System.out.println(
-                "Salary updated. Reason: " + reason
+                "--Salary updated. Reason: " + reason
         );
     }
 
@@ -88,7 +88,7 @@ public class Teacher extends Person {
     public void displayInfo() {
 
         System.out.println(
-                "Teacher: " +
+                "--Teacher: " +
                         getFirstName() + " " +
                         getLastName() +
                         " | subject: " +
