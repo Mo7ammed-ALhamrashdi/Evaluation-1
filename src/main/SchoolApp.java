@@ -13,7 +13,7 @@ public class SchoolApp {
     private InputHandler input =
             new InputHandler();
 
-    public static void main(String[ ] args) {
+    public static void main(String[] args) {
 
         SchoolApp app = new SchoolApp();
 
