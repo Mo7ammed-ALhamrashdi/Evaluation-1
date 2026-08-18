@@ -174,7 +174,7 @@ public class SchoolApp {
                         "Said",
                         "2005-02-15",
                         "Female",
-                        "90000003",
+                        "90000323",
                         "maryam@school.om",
                         "Salalah",
                         "Grade 12",
