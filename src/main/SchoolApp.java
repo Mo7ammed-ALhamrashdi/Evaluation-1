@@ -89,7 +89,7 @@ public class SchoolApp {
 
         String first =
                 input.getStringInput(
-                        "First name:"
+                        "-First name:"
                 );
 
         String last =
