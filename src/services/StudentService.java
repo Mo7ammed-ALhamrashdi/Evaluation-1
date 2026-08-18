@@ -133,7 +133,7 @@ public class StudentService
 
         for (Student s : students) {
 
-            if (s.getFirstName( )
+            if (s.getFirstName()
                     .contains(keyword)
                     ||
                     s.getLastName()
