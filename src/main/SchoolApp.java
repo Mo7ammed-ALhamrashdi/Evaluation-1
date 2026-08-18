@@ -120,7 +120,7 @@ public class SchoolApp {
     private void viewAllStudents() {
 
         System.out.println(
-                "-- All students --"
+                "- All students --"
         );
 
         for (Student s :
