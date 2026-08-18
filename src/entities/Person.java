@@ -14,7 +14,7 @@ public class Person implements Displayable {
     private String address;
 
     public Person(String id, String firstName , String lastName,
-                  String dateOfBirth, String gender,
+                  String dateOfBirth , String gender,
                   String phoneNumber , String email, String address) {
 
         setId(id);
